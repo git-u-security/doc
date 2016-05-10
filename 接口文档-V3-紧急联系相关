@@ -32,6 +32,53 @@
                       "error": "成功描述！"
                     }
 
+### 获取紧急联系人
+      var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://api.u-security.com/api/user/getcontacts",
+        "method": "POST",
+        "headers": {
+          "oauthorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2FwaS51LXNlY3VyaXR5LmNvbVwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTQ2MjQ1OTQ1NSwiZXhwIjoxNDYyNDYzMDU1LCJuYmYiOjE0NjI0NTk0NTUsImp0aSI6IjQ1ODJiZTliNDcxNjlmYWZhYmQ5Mzc1NzVlYjlkMzRjIn0.zwBfhjI5Y-ktV-Izxl4EIDFbaFwh--IznKCrkBmfDKI",
+          "authorization": "Bearer 1tC3F5ylWwQ1CXPAin3NTDM0QqCaY52VS5XEysHT",
+          "cache-control": "no-cache",
+          "postman-token": "92579898-cb68-4bc4-0d9b-0da3b1429187"
+        },
+        "processData": false,
+        "contentType": false,
+        "mimeType": "multipart/form-data",
+        "data": form
+      }
+      
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+      });
+
+###删除联系人
+        var form = new FormData();
+        form.append("contacts_info", "Christina Doe");
+        
+        var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": "http://api.u-security.com/api/user/delcontacts",
+          "method": "POST",
+          "headers": {
+            "oauthorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2FwaS51LXNlY3VyaXR5LmNvbVwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTQ2MjQ1OTQ1NSwiZXhwIjoxNDYyNDYzMDU1LCJuYmYiOjE0NjI0NTk0NTUsImp0aSI6IjQ1ODJiZTliNDcxNjlmYWZhYmQ5Mzc1NzVlYjlkMzRjIn0.zwBfhjI5Y-ktV-Izxl4EIDFbaFwh--IznKCrkBmfDKI",
+            "authorization": "Bearer 1tC3F5ylWwQ1CXPAin3NTDM0QqCaY52VS5XEysHT",
+            "cache-control": "no-cache",
+            "postman-token": "e93f9b9f-5a79-c42f-110a-cf4c56bb7f63"
+          },
+          "processData": false,
+          "contentType": false,
+          "mimeType": "multipart/form-data",
+          "data": form
+        }
+        
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+        });
+
 ### 发送邀请 sendinvitation
 
           var settings = {
