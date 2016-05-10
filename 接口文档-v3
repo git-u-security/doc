@@ -1,3 +1,5 @@
+  - 发送邀请 sendinvitation
+
           var settings = {
             "async": true,
             "crossDomain": true,
