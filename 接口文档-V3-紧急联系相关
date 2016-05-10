@@ -1,4 +1,4 @@
-  - 发送邀请 sendinvitation
+### 发送邀请 sendinvitation
 
           var settings = {
             "async": true,
