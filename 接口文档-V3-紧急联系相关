@@ -55,3 +55,8 @@
           $.ajax(settings).done(function (response) {
             console.log(response);
           });
+    --    返回
+        {
+          "status": 200,
+          "message": "发送邮件完成"
+        }
