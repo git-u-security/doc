@@ -1,3 +1,37 @@
+### 添加紧急联系人
+                    var settings = {
+                      "async": true,
+                      "crossDomain": true,
+                      "url": "http://api.u-security.com/api/user/setcontacts",
+                      "method": "POST",
+                      "headers": {
+                        "oauthorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2FwaS51LXNlY3VyaXR5LmNvbVwvbGFyYXZlbC1iYXNlXC9wdWJsaWNcL2FwaVwvdXNlclwvbG9naW4iLCJpYXQiOjE0NjI4NzU4ODUsImV4cCI6MTQ2Mjg3OTQ4NSwibmJmIjoxNDYyODc1ODg1LCJqdGkiOiJlODM5OWMyZTU2OTRlMWMwZDdjODdlOTQ0NDNhZGU3MiJ9.ig2h94qXLbxObfQKvyOtpbUEGXa0tg2eVdpl8EGiIyQ",
+                        "authorization": "Bearer WPGYAlbjGgwOjNIsVJUcAeQVwd4RpNYWoBy9y5Bg",
+                        "cache-control": "no-cache",
+                        "postman-token": "9c38cc75-4a77-1e3c-2215-1447da55277c",
+                        "content-type": "application/x-www-form-urlencoded"
+                      },
+                      "data": {
+                        "contacts_info": "274037469@qq.com"
+                      }
+                    }
+                    
+                    $.ajax(settings).done(function (response) {
+                      console.log(response);
+                    });
+
+          - 返回
+                    失败
+                    {
+                      "status": 1003,
+                      "error": "对方不是系统用户，请邀请！"
+                    }
+                    成功
+                    {
+                      "status": 200,
+                      "error": "成功描述！"
+                    }
+
 ### 发送邀请 sendinvitation
 
           var settings = {
