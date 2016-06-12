@@ -94,7 +94,7 @@
               "content-type": "application/x-www-form-urlencoded"
             },
             "data": {
-              "message0": "beijingsdfghnjmassd",
+              "msg": "beijingsdfghnjmassd",
               "email": "18612116114@163.com"
             }
           }
