@@ -107,3 +107,57 @@
           "status": 200,
           "message": "发送邮件完成"
         }
+
+### 对方允许设置自己为你的联系人
+
+        var form = new FormData();
+        form.append("user_id", "1");//对方的user_id
+        form.append("", "");
+        
+        var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": "http://api.u-security.com/api/user/pass_by_contacts",
+          "method": "POST",
+          "headers": {
+            "oauthorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6XC9cL2FwaS51LXNlY3VyaXR5LmNvbVwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTQ2Njk1MDgyNywiZXhwIjoxNDcyMTM0ODI3LCJuYmYiOjE0NjY5NTA4MjcsImp0aSI6IjZjZDA4NWEwMGQwZjYzYTZkNGIyMjQwYmU1ZWRlODhkIn0.sOhKsc6PSkBGH6wu_oS10UN_xffa3SNKxdSpDbcCzio",
+            "authorization": "Bearer GMEr5hXGJcRChNkiDiK2mqQJjRXAL2a1KcdTilsH",
+            "cache-control": "no-cache",
+            "postman-token": "bc06e46e-4255-4f7c-5f25-23613b57fa62"
+          },
+          "processData": false,
+          "contentType": false,
+          "mimeType": "multipart/form-data",
+          "data": form
+        }
+        
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+        });
+        
+### 对方拒绝设置自己为你的联系人
+        var form = new FormData();
+        form.append("user_id", "1");//对方的user_id
+        form.append("", "");
+        
+        var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": "http://api.u-security.com/api/user/del_by_contacts",
+          "method": "POST",
+          "headers": {
+            "oauthorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImlzcyI6Imh0dHA6XC9cL2FwaS51LXNlY3VyaXR5LmNvbVwvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTQ2Njk1MDgyNywiZXhwIjoxNDcyMTM0ODI3LCJuYmYiOjE0NjY5NTA4MjcsImp0aSI6IjZjZDA4NWEwMGQwZjYzYTZkNGIyMjQwYmU1ZWRlODhkIn0.sOhKsc6PSkBGH6wu_oS10UN_xffa3SNKxdSpDbcCzio",
+            "authorization": "Bearer GMEr5hXGJcRChNkiDiK2mqQJjRXAL2a1KcdTilsH",
+            "cache-control": "no-cache",
+            "postman-token": "f103c291-2628-4a81-feaf-8bd4d4365731"
+          },
+          "processData": false,
+          "contentType": false,
+          "mimeType": "multipart/form-data",
+          "data": form
+        }
+        
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+        });
+  
