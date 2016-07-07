@@ -55,36 +55,64 @@
       });
 
   -- 返回
-        {
-        "status": 200,
-        "message": "获取成功",
-        "contacts_info": [
           {
-            "id": 5,
-            "user_id": 1,
-            "contacts_info": "user@user.com",
-            "contacts_st": 3, 联系人添加状态( 0添加未确认 1对方不是系统用户 2 主动关注  3添加完成  4对方拒绝 5自己删除)
-            "contacts_id": 2,
-            "updated_at": "2016-06-26 14:38:16",
-            "created_at": "2016-06-23 15:41:58",
-            "phone": "1212121",
-            "name": "admin",
-            "email": "admin@admin.com"
-          },
-          {
-            "id": 6,
-            "user_id": 1,
-            "contacts_info": "buaalxl@163.com",
-            "contacts_st": 0,
-            "contacts_id": 57,
-            "updated_at": "2016-07-07 07:22:43",
-            "created_at": "2016-07-07 07:22:43",
-            "phone": "1212121",
-            "name": "admin",
-            "email": "admin@admin.com"
+            "status": 200,
+            "message": "获取成功",
+            "contacts_info": [
+              {
+                "id": 5,
+                "user_id": 1,//和自己的id一致就是我的联系人 ，不一样就是设我为联系人的id
+                "contacts_info": "user@user.com",
+                "contacts_st": 3,//联系人添加状态( 0添加未确认 1对方不是系统用户 2 主动关注  3添加完成  4对方拒绝 5自己删除)
+                "contacts_id": 2,
+                "updated_at": "2016-06-26 14:38:16",
+                "created_at": "2016-06-23 15:41:58",
+                "phone": null,
+                "name": null,
+                "email": "user@user.com",
+                "image": null
+              },
+              {
+                "id": 6,
+                "user_id": 1,
+                "contacts_info": "buaalxl@163.com",
+                "contacts_st": 0,
+                "contacts_id": 57,
+                "updated_at": "2016-07-07 07:22:43",
+                "created_at": "2016-07-07 07:22:43",
+                "phone": null,
+                "name": null,
+                "email": "buaalxl@163.com",
+                "image": "admin/images/gallery/wd+JWv12OgMHwAAAABJRU5ErkJggg=="
+              },
+              {
+                "id": 7,
+                "user_id": 2,
+                "contacts_info": "admin@admin.com",
+                "contacts_st": 0,
+                "contacts_id": 1,
+                "updated_at": null,
+                "created_at": null,
+                "phone": "1212121",
+                "name": "admin",
+                "email": "admin@admin.com",
+                "image": "admin/images/gallery/RefuHf3h5Ew+Wll2+JCg87YatP+mYHP8fHVfzLzf2GQMAAAAASUVORK5CYII="
+              },
+              {
+                "id": 8,
+                "user_id": 1,
+                "contacts_info": "1auth@gmail.com",
+                "contacts_st": 1,
+                "contacts_id": null,
+                "updated_at": null,
+                "created_at": null,
+                "phone": null,
+                "name": null,
+                "email": null,
+                "image": null
+              }
+            ]
           }
-        ]
-      }
 
 
 ###删除联系人
